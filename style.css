@@ -455,19 +455,37 @@ body {
   flex-wrap: wrap;
 }
 
-.nav-item {
-  margin-right: 1.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #333;
-  font-weight: 600;
-}
-
-.menu-icon {
+.menu-toggle {
   display: none;
+  font-size: 2rem;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsif: tampilkan hamburger dan sembunyikan nav */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    color: #333;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem 2rem;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
 }
 
 /* HERO */
@@ -686,12 +704,6 @@ body {
   margin: 0 auto;
 }
 
-/* RESPONSIVE STYLES */
-@media (max-width: 768px) {
-  .nav-menu {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
   .menu-icon {
     display: block;
@@ -719,4 +731,3 @@ body {
   .timeline-event:nth-child(even) {
     flex-direction: column;
   }
-}
