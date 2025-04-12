@@ -7,21 +7,17 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="navbar">
-        <div class="navbar-brand">Nanti Dikasi Logo</div>
-        <div class="navbar-toggle" onclick="document.querySelector('.navbar-menu').classList.toggle('active')">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <nav class="navbar-menu" aria-label="Main Navigation">
-          <a href="#">HOME</a>
-          <a href="#">ABOUT</a>
-          <a href="#">WORKING</a>
-          <a href="#">READING</a>
-          <a href="#">ACHIEVEMENT</a>
-        </nav>
-      </header>
+  <header class="header">
+    <nav class="nav-menu">
+      <a href="/index.html" class="nav-item">home</a>
+      <a href="/about.html" class="nav-item">about</a>
+      <a href="#working" class="nav-item">working</a>
+      <a href="#reading" class="nav-item">reading</a>
+      <button class="menu-icon" aria-label="Toggle menu">
+        <i class="ti ti-menu"></i>
+      </button>
+    </nav>
+  </header>
   
     <main>
       <section class="hero">
@@ -31,17 +27,6 @@
             <p class="hero-description">
               No matter how old you are, never stop learning because whatever you read will be useful in the future.
             </p>
-            <button class="hero-cta" aria-label="Challenge the world">challenge the world</button>
-          </div>
-        </div>
-      </section>
-  
-      <section class="featured">
-        <div class="featured-container">
-          <h2 class="featured-title">YOU'VE SEEN ME IN</h2>
-          <div class="featured-logos">
-            <img src="/assets/solusi247.png" alt="Logo 1" class="featured-logo">
-            <img src="/assets/Logo_Universitas_Terbuka.svg" alt="Logo 1" class="featured-logo">
           </div>
         </div>
       </section>
@@ -115,6 +100,17 @@
           </div>
         </div>
       </section>
+
+      <section class="featured">
+        <div class="featured-container">
+          <h2 class="featured-title">YOU'VE SEEN ME IN</h2>
+          <div class="featured-logos">
+            <img src="/assets/solusi247.png" alt="Logo 1" class="featured-logo">
+            <img src="/assets/Logo_Universitas_Terbuka.svg" alt="Logo 1" class="featured-logo">
+          </div>
+        </div>
+      </section>
+      
     </main>
   </body>
 
